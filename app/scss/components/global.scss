@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:400,400i,500,500i,700,700i,900,900i&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+    background: #e8eadb;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.wrapper{
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+//animates
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
