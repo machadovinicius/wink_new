@@ -42,6 +42,7 @@ header{
                                 visibility: hidden;
                                 transition: all .5s;
                                 padding: 35px 0;
+                                z-index: 3;
                                 ul{
                                     width: 100%;
                                     display: flex;
@@ -94,10 +95,11 @@ header{
     width: 405px;
     height: 100vh;
     position: absolute;
-    right: -700px;
+    right: 0px;
     top: 0;
     padding: 65px 40px 30px;
     transition: all 1s;
+    z-index: 3;
     &.active{
         display: block;
         right: 0;

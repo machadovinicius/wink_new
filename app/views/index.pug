@@ -1,6 +1,7 @@
 html(lang="en")
     head
         meta(charset="UTF-8")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css")
         link(rel="stylesheet", href="css/main.css")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css")
         meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
@@ -11,6 +12,84 @@ html(lang="en")
         script(src="js/main.js")
 body
     include header.pug
-    .slider
-        img(src="../images/slider_home_1.png", alt="")
+    .home
+        section.slider_home
+            .item
+                img(src="../images/home/slider_home_1.png", alt="")
+                .title_one O olhar que marca
+                .title_two.animated.fadeInRight •wink•
+                .title_three.animated.fadeInUp BRASIL • DESDE 2015
+            .item
+                img(src="../images/home/slider_home_1.png", alt="")
+                .title_one O olhar que marca
+                .title_two.animated.fadeInRight •wink•
+                .title_three.animated.fadeInUp BRASIL • DESDE 2015
+        section.about
+            .wrapper
+                span.subtitle BRASIL • DESDE 2015
+                h2.title Sobre nós
+                p.text A nossa missão é dar a todas as mulheres a possibilidade de terem o olhar mais marcante, adaptado às suas feições. Wiñk, O olhar que marca.
+                .more
+                    a(href="#") Saiba mais
+        section.showcase
+            .box
+                .item
+                    .border
+                        h3.title Serviços
+                        span.subtitle Cílios
+                        p.text Conheça aqui todos os serviços • Wiñk  
+                        .more
+                            a(href="#") saiba mais
+                .item.black
+                    .border
+                        h3.title Serviços
+                        span.subtitle Sobrancelhas
+                        p.text Conheça aqui todos os serviços • Wiñk  
+                        .more
+                            a(href="#") saiba mais
+                .item.bg_full
+                    img(src="../images/home/banner-produto.jpg", alt="")
+                .item
+                    img(src="../images/home/lapis_lift_draw.png", alt="")
+                    p.text Lápis "Lift and Draw"
+        section.best_sellers
+            h2.section_title Best Sellers
+            span.section_subtitle Wiñk
+            .wrapper
+                .box
+                    .item
+                        img(src="../images/home/product_1.png", alt="")
+                        p.text Sérum de Cílios
+                    .item
+                        img(src="../images/home/product_2.png", alt="")
+                        p.text Golden Blonde
+                    .item
+                        img(src="../images/home/product_3.png", alt="")
+                        p.text Demaquilante
+        section.how_to_use
+            h2.section_title How to Use
+            span.section_subtitle VÍDEOS • WINK
+            .wrapper
+                .box
+                    .item
+                        img(src="../images/home/video_1.jpg", alt="")
+                        .play
+                            img(src="../images/home/play_video.png", alt="")
+                        p.text Demaquilante
+                    .item
+                        img(src="../images/home/video_2.jpg", alt="")
+                        .play
+                            img(src="../images/home/play_video.png", alt="")
+                        p.text Lápis de Sobrancelhas
+                    .item
+                        img(src="../images/home/video_3.jpg", alt="")
+                        .play
+                            img(src="../images/home/play_video.png", alt="")
+                        p.text Lift & Draw
+        section.big_video
+            .play
+                img(src="../images/home/play_video.png", alt="")
+        section.bg_footer
+            img(src="../images/home/bg_footer.png", alt="")
+                
     include footer.pug

@@ -24,7 +24,7 @@ gulp.task("sass", function () {
     );
 });
 gulp.task("fonts", () =>
-  gulp.src(src + "fonts/*").pipe(gulp.dest(src + "/fonts"))
+  gulp.src(src + "fonts/*").pipe(gulp.dest(target + "fonts/"))
 );
 gulp.task("scripts", function () {
   return gulp
@@ -40,7 +40,7 @@ gulp.task("scripts", function () {
 
 gulp.task("images", function () {
   return gulp
-    .src(src + "images/*")
+    .src(src + "images/**")
     .pipe(gulp.dest(target + "images/"))
     .pipe(
       browserSync.reload({
