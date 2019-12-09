@@ -4,110 +4,13 @@ html(lang="en")
         link(rel="stylesheet", href="css/main.css")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css")
         meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
-        title Bootlab - Finalmente você no controle da tecnologia
+        title Wiñk Brasil - Styling de Sobrancelhas e Pestanas
+        script(src="https://kit.fontawesome.com/b589e63836.js" crossorigin="anonymous")
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
         script(src="js/main.js")
 body
-    .bg_home
-    .wrapper
-        .menu
-            ul
-                li
-                    a.logo_menu(href="#")
-                li 
-                    a(href="#oestudio") O Estúdio
-                li 
-                    a(href="#oquefazemos")  O que fazemos
-                li 
-                    a(href="#comotrabalhamos") Como pensamos
-                li  
-                    a(href="#vamosconversar") Vamos conversar
-        .content
-            .logo
-                img(src="../images/bootlab-logo.png" alt="Bootlab Logo")
-            section.home
-                .title
-                    h1 Especializados em <br>quebrar as barreiras <br>da tecnologia. <br><span>Nós fazemos <span id="log"></span></span>
-            section.studio#oestudio
-                h2.title_mobile O Estúdio
-                .circle.fadeInUp
-                .description
-                    .midarea
-                        h2.fadeInUp Vivemos na <br>interseção entre<br>a criatividade &<br>a tecnologia
-                        p A bootlab é um estúdio de consultoria e desenvolvimento de tecnologia, parceira das agências de comunicação mais dinâmicas do Brasil. 
-                .box
-                    .midarea
-                        .container
-                            .item
-                                .text
-                                    p A tecnologia está agora no coração de todas as empresas modernas. 
-                                    p Somos especializados em ajudar nossos clientes a superar as barreiras da tecnologia.
-                            .item
-                                h2 Finalmente você<br>no controle da <br>tecnologia
-                .animed#oquefazemos
-                    h2.title_mobile O que fazemos
-                    .animate
-                        .bg_animate
-                    .midarea
-                        h2 Crescimento<br>orientado a<br> solução
-                        .text
-                            p Desenvolvemos produtos digitais<br> altamente funcionais. 
-                            p A nossa entrega pode ser moldada<br>de acordo com a necessidade da sua <br>campanha, do seu cliente ou do seu <br>projeto.
-                .services
-                    .slider_box
-                        .item
-                            .space.green
-                                h2 App Nativo para Android e IOS
-                                p Utilizamos as melhores linguagens para<br>desenvolver nossos apps, como React Native,<br> exportando para Google Play e App Store.
-                        .item
-                            .space.orange
-                                h2 Desenvolvimento Web
-                                p Estruturamos Apis e vários tipos de soluções web, desde um simples email marketing a landing pages, hotsite, sites institucionais,  e-commerces e CMS personalizados para cada cliente..
-                        .item
-                            .space.yellow
-                                h2 Servidor e hospedagem
-                                p Ajudamos a sua empresa a ter as melhores soluções em cloud service do mercado, com servidores dedicados como AWS, Digital Ocean entre outras.
-                        .item
-                            .space.blue
-                                h2 Integrações e processo de Devops. 
-                                p Estrutura limpa com alta performance de fácil manutenção. Todos os dias buscamos atingir uma excelência em tecnologia, estabelecendo processos e inovando para gerar projetos com alta performance. 
-                .make#comotrabalhamos
-                    h3.title_mobile Como pensamos
-                    h2 Acreditamos<br>em 3 pilares de<br>cocriação
-                    .step.one
-                        p Somos comprometidos em ser proativos, comunicativos, transparentes e curiosos em tudo o que fazemos.
-                        h3.green 1
-                    .step.one
-                        p Relações de alta qualidade produzem um trabalho de alta qualidade. Nós participamos  diretamente com nossos clientes em um processo intensamente colaborativo.
-                        h3.orange 2
-                    .step
-                        p Priorizamos a capacidade de ser flexível. Em um mundo onde a tecnologia evolui tão rápido, acreditamos que esta é a única forma de ser eficiente.
-                        h3.yellow 3
-    .contact#vamosconversar
-        .wrapper_contact
-            h3.title_mobile Vamos conversar
-            .title
-                h2 Marque uma apresentação <br>grátis na sua empresa
-            .box
-                .item
-                    p ↳ Estamos ansiosos para conhecer você e seu projeto. Vamos começar com uma simples conversa.
-                .item
-                    p.small Somos do Rio de Janeiro, mas <br>podemos trabalhar de qualquer lugar. <br><span>contato@bootlab.com.br<br> 21 98949.0668<span>
-            .form
-                form(action="")
-                    .fields Meu nome é <input type="text" placeholder="seu nome"> e sou da <input type="text" placeholder="nome da empresa"><br><br>estou na cidade <input type="text" placeholder="rio de janeiro?">. Preciso de um parceiro para me ajudar <br><br>com tecnologia. Você pode falar comigo pelo <input type="text" placeholder="seu email ou telefone"> para<br><br> iniciar a conversa. Obrigado!<br><br><Button type="submit">Enviar</button>
-    .footer
-        .wrapper
-            .box
-                .item
-                    img(src="../images/logo_footer.png", alt="Bootlab desenvolvimento de aplicativos")
-                .item
-                    p © Copyright Bootlab 2019
-                .item
-                    p Redes sociais<br><a href="#">Instagram</a> <a href="https://www.linkedin.com/company/30732229/admin/">/ Linkedin</a>
-    .loading
-        .blue
-        .yellow
-        .orange
-        .green
+    include header.pug
+    .slider
+        img(src="../images/slider_home_1.png", alt="")
+    include footer.pug

@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display:400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap');
+
 
 html{
   scroll-behavior: smooth;
 }
 body{
-    background: #e8eadb;
-    font-family: 'Red Hat Display', sans-serif;
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+i{
+    font: 14px;
 }
 .wrapper{
     position: relative;
@@ -14,22 +18,19 @@ body{
     display: block;
     margin: 0 auto;
 }
-
-
-//animates
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+@font-face{
+  
+font-family:quentinregular;
+src:url(../fonts/quentin-webfont.eot);
+src:url(../fonts/quentin-webfont.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/quentin-webfont.woff2) format("woff2"),
+    url(../fonts/quentin-webfont.woff) format("woff"),
+    url(../fonts/quentin-webfont.ttf) format("truetype"),
+    url(../fonts/quentin-webfont.svg#quentinregular) format("svg");
 }
-
-.fadeInUp {
-  animation-name: fadeInUp;
-}
+// h1{
+//     text-align: center;
+//     font-family: quentinregular;
+//     font-size: 66px;
+//     color: #fa7598;
+// }

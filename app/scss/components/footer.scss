@@ -1,0 +1,52 @@
+footer{
+    background: #0a0a0a;
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+    .wrapper{
+        .box{
+            display: flex;
+            justify-content: flex-start;
+            .item{
+                margin-right: 50px;
+                .logo{
+                    img{}
+                    p{
+                        font-size: 14px;
+                        line-height: 30px;
+                        color: white;
+                        margin-top: 8px;
+                    }
+                    margin-bottom: 15px;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: white;
+                }
+                .social{
+                    padding: 20px 0;
+                    a{
+                        color: white;
+                        font-size: 15px;
+                        &:after{
+                            content: '|';
+                            padding: 0 12px;
+                        }
+                    }
+                }
+                h2{
+                    color: white;
+                }
+                ul{
+                    li{
+                        padding: 5px 0;
+                        a{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
