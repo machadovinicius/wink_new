@@ -1,0 +1,94 @@
+.scheduling{
+    .banner{
+        max-height: 700px;
+        height: 700px;
+        .item{
+            img{
+                width: 100%;
+                height: 700px;
+                object-fit: cover;
+            }
+        }       
+    }
+    .content{
+        .wrapper{
+            .box{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                position: relative;
+                .title_bg{
+                    font-size: 225px;
+                    opacity: .2;
+                    color: #ec789a;
+                    font-family: quentinregular;
+                    font-style: normal;
+                    font-weight: 100;
+                }
+                .item{
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    .subtitle{
+                        text-align: center;
+                        display: block;
+                        color: black;
+                        font-size: 12px;
+                        font-weight: 500;
+                        letter-spacing: .25em;
+                        line-height: 1.33em;
+                        text-transform: uppercase;
+                        margin-bottom: 15px;
+                    
+                    }
+                    .title{
+                        font-size: 45px;
+                        margin-bottom: 28px;
+                        font-weight: 700;
+                        letter-spacing: .025em;
+                        text-transform: uppercase;
+                        color: black;
+                        text-align: center;
+                    }
+                }
+            }
+            .lojas{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: center;
+                padding-bottom: 100px;
+                .item{
+                    width: 33%;
+                    margin-bottom: 30px;
+                    img{
+                        width: 300px;
+                        height: 200px;
+                        object-fit: cover;
+                    }
+                    h3{
+                        color: #fa7598;
+                        font-weight: 700;
+                        letter-spacing: .025em;
+                        text-transform: uppercase;
+                        line-height: 1.41em;
+                        font-size: 18px;
+                        text-align: left;
+                        margin: 20px 0 ;
+                    }
+                    p{
+                        font-size: 14px;
+                        line-height: 30px;
+                        color: black;
+                    }
+                    a{
+                        font-size: 14px;
+                        line-height: 30px;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

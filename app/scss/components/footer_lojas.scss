@@ -1,0 +1,58 @@
+.footer_lojas{
+    padding: 100px 0;
+    background-color: #ddd;
+    .wrapper{
+        .box{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            height: 160px;
+            .item{
+                position: relative;
+                width: 100%;
+                .title_bg{
+                    font-size: 66px;
+                    opacity: .2;
+                    color: #ec789a;
+                    font-family: quentinregular;
+                    font-style: normal;
+                    font-weight: 100;
+                    text-align: center;
+                }
+                .content{
+                    position: absolute;
+                    top: 30%;
+                    left: 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    .title{
+                        font-size: 45px;
+                        color: black;
+                        font-weight: 700;
+                        height: 1em;
+                        letter-spacing: .025em;
+                        line-height: 1em;
+                        overflow: hidden;
+                        vertical-align: middle;
+                        margin-bottom: 20px;
+                        width: 100%;
+                        text-align: center;
+                    }
+                    .subtitle{
+                        text-align: center;
+                        width: 100%;
+                        font-size: 12px;
+                        font-weight: 500;
+                        letter-spacing: .25em;
+                        line-height: 1.33em;
+                        text-transform: uppercase;
+                        padding: 0 30px;
+                    }
+                }
+            }
+        }
+    }
+}
