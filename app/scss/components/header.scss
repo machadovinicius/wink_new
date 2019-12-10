@@ -10,11 +10,59 @@ header{
             }
         }
         .menu{
+            .close_menu{
+                display: none;
+                position: absolute;
+                @media only screen and (max-width: 600px) {
+                    display: block;
+                    right: 30px;
+                    top: 30px;
+                    z-index: 6;
+                }
+                a{
+                    color: black;
+                    text-align: right;
+                    font-size: 20px;
+                }
+            }
+            @media only screen and (max-width: 600px) {
+                display: none;
+                position: relative;
+                &.active{
+                    display: block;
+                    width: 100%;
+                    height: 100vh;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: #fff;
+                    padding: 30px;
+                    z-index: 4;
+                    &:before{
+                        content: 'Menu';
+                        font-size: 22px;
+                        color: black;
+                        letter-spacing: .25em;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        padding: 0 10px 30px 10px;
+                        display: block;
+                    }
+                }
+            }
             ul{
                 display: flex;
                 justify-content: space-between;
+                @media only screen and (max-width: 600px) {
+                   flex-wrap: wrap;
+                }
                 li{
                     margin: 0 15px;
+                    @media only screen and (max-width: 600px) {
+                        width: 100%;
+                        padding: 10px 0;
+                    }
                     a{
                         font-size: 12px;
                         font-weight: 500;
@@ -74,6 +122,28 @@ header{
         }
         .bar{
             width: 18px;
+            @media only screen and (max-width: 600px) {
+                display: none;
+            }
+            a{
+                display: block;
+                width: 100%;
+                padding: 10px 0;
+                span{
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    background: black;
+                    margin: 4px 0;
+                }
+            }
+        }
+        .bar_mobile{
+            width: 18px;
+            display: none;
+            @media only screen and (max-width: 600px) {
+                display: block;
+            }
             a{
                 display: block;
                 width: 100%;
@@ -89,21 +159,45 @@ header{
         }
     }
 }
+#mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    background: black;
+    opacity: 0;
+    display: block;
+    visibility: hidden;
+    transition: all 1s;
+    &.active{
+        opacity: 0.6;
+        visibility: visible;
+        transition: opacity 2s;
+    }
+}
 #menu_bar{
     display: none;
     background: #fa7598;
     width: 405px;
     height: 100vh;
     position: absolute;
-    right: 0px;
+    right: -700px;
     top: 0;
     padding: 65px 40px 30px;
+    visibility: hidden;
     transition: all 1s;
     z-index: 3;
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
     &.active{
         display: block;
         right: 0;
-        transition: all 1s;
+        visibility: visible;
+        transition: right 1.5s;
+
     }
     .close{
         position: absolute;

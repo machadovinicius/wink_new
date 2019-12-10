@@ -50,12 +50,18 @@
                         text-transform: uppercase;
                         color: black;
                         text-align: center;
+                        @media only screen and (max-width: 600px) {
+                            font-size: 38px;
+                        }
                     }
                 }
             }
             .text{
                 padding: 0 180px;
                 margin-bottom: 100px;
+                @media only screen and (max-width: 600px) {
+                    padding: 0;
+                }
                 p{
                     text-align: center;
                     font-size: 14px;

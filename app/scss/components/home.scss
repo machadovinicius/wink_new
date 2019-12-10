@@ -76,6 +76,10 @@
         padding: 50px 0;
         &.about{
             text-align: center;
+            @media only screen and (max-width: 600px) {
+                padding: 0;
+                font-size: 38px;
+            }
             .wrapper{
                 .subtitle{
                     display: block;
@@ -103,6 +107,9 @@
                     line-height: 1.7em;
                     color: black;
                     padding: 0 18%;
+                    @media only screen and (max-width: 600px) {
+                        padding: 0;
+                    }
                 }
                 .more{
                     display: block;
@@ -121,6 +128,10 @@
             }
         }
         &.showcase{
+            @media only screen and (max-width: 600px) {
+                padding: 0;
+                font-size: 38px;
+            }
             .box{
                 display: flex;
                 justify-content: space-between;
@@ -133,6 +144,9 @@
                     justify-content: center;
                     align-items: center;
                     flex-wrap: wrap;
+                    @media only screen and (max-width: 600px) {
+                        width: 100%;
+                    }
                     .border{
                         border: 2px solid transparent;
                         width: 90%;
@@ -253,6 +267,9 @@
                     justify-content: space-between;
                     align-items: center;
                     margin-top: 50px;
+                    @media only screen and (max-width: 600px) {
+                        flex-wrap: wrap;
+                    }
                     .item{
                         position: relative;
                         width: 100%;

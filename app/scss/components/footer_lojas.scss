@@ -7,9 +7,16 @@
             display: flex;
             justify-content: space-between;
             height: 160px;
+            @media only screen and (max-width: 600px) {
+                flex-wrap: wrap;
+                height: auto;
+            }
             .item{
                 position: relative;
                 width: 100%;
+                @media only screen and (max-width: 600px) {
+                    margin-bottom: 30px;
+                }
                 .title_bg{
                     font-size: 66px;
                     opacity: .2;

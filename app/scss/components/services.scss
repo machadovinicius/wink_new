@@ -50,6 +50,9 @@
                         text-transform: uppercase;
                         color: black;
                         text-align: center;
+                        @media only screen and (max-width: 600px) {
+                            font-size: 30px;
+                        }
                     }
                 }
             }
@@ -62,11 +65,18 @@
                     width: 100%;
                     display: flex;
                     justify-content: center;
+                    @media only screen and (max-width: 600px) {
+                        justify-content: flex-start;
+                    }
                     ul{
                         width: 60%;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                        @media only screen and (max-width: 600px) {
+                            width: 100%;
+                            flex-wrap: wrap;
+                        }
                         li {
                             white-space: nowrap;
                             color: #000;
@@ -76,6 +86,11 @@
                             line-height: 1.33em;
                             text-transform: uppercase;
                             cursor: pointer;
+                            @media only screen and (max-width: 600px) {
+                                width: 50%;
+                                padding: 10px 0;
+                                letter-spacing: 0.2px;
+                            }
                         }
                     }
                 }
@@ -85,14 +100,20 @@
                     justify-content: space-between;
                     align-items: center;
                     padding: 50px 0 100px 0;
+                    flex-wrap: wrap;
+                    @media only screen and (max-width: 600px) {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
                     .item_tab{
-                        width: 250px;
-                        height: 280px;
+                        width: 280px;
+                        height: 300px;
                         background: #f4f6f8;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         cursor: pointer;
+                        margin-bottom: 30px;
                         .bg{
                             background: #fa7598;
                             width: 80%;

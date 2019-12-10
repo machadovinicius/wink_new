@@ -1,0 +1,147 @@
+.prices{
+    .banner{
+        max-height: 700px;
+        height: 700px;
+        .item{
+            img{
+                width: 100%;
+                height: 700px;
+                object-fit: cover;
+            }
+        }       
+    }
+    .content{
+        .wrapper{
+            @media only screen and (max-width: 600px) {
+                padding: 0 30px;
+            }
+            .box{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                position: relative;
+                .title_bg{
+                    font-size: 225px;
+                    opacity: .2;
+                    color: #ec789a;
+                    font-family: quentinregular;
+                    font-style: normal;
+                    font-weight: 100;
+                }
+                .item{
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    .subtitle{
+                        text-align: center;
+                        display: block;
+                        color: black;
+                        font-size: 12px;
+                        font-weight: 500;
+                        letter-spacing: .25em;
+                        line-height: 1.33em;
+                        text-transform: uppercase;
+                        margin-bottom: 15px;
+                    
+                    }
+                    .title{
+                        font-size: 45px;
+                        margin-bottom: 28px;
+                        font-weight: 700;
+                        letter-spacing: .025em;
+                        text-transform: uppercase;
+                        color: black;
+                        text-align: center;
+                    }
+                }
+            }
+            .tab_prices{
+                padding: 30px 0 70px 0;
+                .box_price{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    .item_price{
+                        width: 48%;
+                        margin-top: 30px;
+                        @media only screen and (max-width: 600px) {
+                            width: 100%;
+                        }
+                        .title_price{
+                            color: #fa7598;
+                            margin-bottom: 30px;
+                            font-size: 18px;
+                            line-height: 1.41em;
+                            font-weight: 700;
+                            letter-spacing: .025em;
+                            text-transform: uppercase;
+                        }
+                        .table{
+                            padding: 13px 0;
+                            .item_table{
+                                display: flex;
+                                /* justify-content: space-between; */
+                                width: 100%;
+                                .first{
+                                    padding: 0 10px 0 0;
+                                    color: #000;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                }
+                                .second{
+                                    flex: 1;
+                                    display: flex;
+                                    align-items: flex-end;
+                                    span{
+                                        width: 100%;
+                                        display: inline-block;
+                                        height: 2px;
+                                        border-bottom: 1px solid #afaaa9;
+                                    }
+                                }
+                                .third{
+                                    padding: 0 0 0 10px;
+                                    font-size: 16px;
+                                    font-weight: 200;
+                                    letter-spacing: normal;
+                                    text-transform: none;
+                                }
+                            }
+                        }
+                        .condition{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 10px 0;
+                            &.only{
+                                justify-content: flex-end;
+                            }
+                            .text{
+                                display: block;
+                                font-size: 16px;
+                                font-weight: 300;
+                                letter-spacing: normal;
+                                text-transform: none;
+                                color:#fa7598;
+                            }
+                            .special{
+                                width: 150px;
+                                background-color: #fa7598;
+                                display: block;
+                                color: #000;
+                                font-style: italic;
+                                padding: 3px 13px;
+                                text-align: center;
+                                font-size: 16px;
+                                font-weight: 300;
+                                letter-spacing: normal;
+                                text-transform: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
